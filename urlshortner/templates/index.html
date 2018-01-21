@@ -1,0 +1,18 @@
+<table>
+    <th>
+        <td>id</td>
+        <td>short</td>
+        <td>views</td>
+        <td>info</td>
+        <td>delete</td>
+    </th>
+    {% for url in urls %}
+        <tr>
+            <td>{{url.id}}</td>
+            <td>{{url.short}}</td>
+            <td>{{url.views}}</td>
+            <td><href a="/info?id={{url.id}}">info</href></td>
+            <td><href a="/delete?id={{url.id}}">info</href></td>
+        </tr>
+    {% endfor %}
+</table>
